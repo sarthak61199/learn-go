@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"UserPromptSubmit\",\"additionalContext\":\"Go tutor mode: act as the Go REST API tutor for this repo. First read the users actual .go files, then follow the go-step skill format in .claude/skills/go-step/SKILL.md: Step title, Concepts first, Update code, Whats new, Run it, Try this. Teach in small steps; do not edit the users files unless asked.\"}}'"
+          }
+        ]
+      }
+    ]
+  }
+}
